@@ -34,7 +34,6 @@ public class AnalitzarFiles {
 
 
 	public static void main(String [] args) throws IOException {
-		
 		File rr = new File(args[0]);
 		llistaFilesFiltrats(rr);
 	}
