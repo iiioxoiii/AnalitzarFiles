@@ -59,13 +59,13 @@ public class AnalitzarFiles {
     	        if (element.isDirectory()) {
     	        
     	        //Si es un fitxer	
-    	        } else {
+				} else {
     	        	
-    	        	//s'avalua el filtre
-    	        	 FileNameExtensionFilter filter = new FileNameExtensionFilter("primerFiltre", "doc", "png","jpg");
+					//s'avalua el filtre
+					FileNameExtensionFilter filter = new FileNameExtensionFilter("primerFiltre", "doc", "png","jpg");
     	        	
-    	        	 //si el filtre es acceptat
-    	        	 if (filter.accept(element)) {
+    	        	//si el filtre es acceptat
+    	        	if (filter.accept(element)) {
     	        		
     	        		//Es demana el nom del fitxer...
     	        		String nom = element.getName();
@@ -85,7 +85,7 @@ public class AnalitzarFiles {
     	        		
     	        	} 	        
     	        }
-    	    }
+    	   	}
         }
 		
         //es tanca el buffer
